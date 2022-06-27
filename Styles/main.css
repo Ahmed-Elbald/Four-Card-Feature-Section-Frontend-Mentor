@@ -75,11 +75,16 @@ header {
   margin-bottom: 5em;
   text-align: center;
 }
+header h2 {
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  opacity: 0.7;
+}
 header h2.light-header {
   font-weight: 200;
 }
 header p.fadded-text {
-  max-width: 350px;
+  max-width: 550px;
   margin: 1em auto 0;
 }
 
