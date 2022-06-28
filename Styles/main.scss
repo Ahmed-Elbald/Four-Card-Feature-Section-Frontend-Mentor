@@ -153,39 +153,29 @@ main {
         left: 0;
       }
 
-      &.card-cyan {
-        &::before {
-          background-color: $cyan;
-        }
-      }
+      $colors: (
+        cyan : $cyan,
+        red: $red,
+        orange: $orange,
+        blue: $blue
+      );
 
-      &.card-red {
-        &::before {
-          background-color: $red;
-        }
-      }
-
-      &.card-orange {
-        &::before {
-          background-color: $orange;
-        }
-      }
-
-      &.card-blue {
-        &::before {
-          background-color: $blue;
-        }
-      }
-
-      p {
-        font-size: .8rem;
-      }
-
-      img {
-        width: 50px;
-        align-self: flex-end;
-        margin-top: 3em;
+    @each $name,
+    $color in $colors {
+      &.card-#{$name}::before {
+        background-color: $color;
       }
     }
+
+    p {
+      font-size: .8rem;
+    }
+
+    img {
+      width: 50px;
+      align-self: flex-end;
+      margin-top: 3em;
+    }
   }
+}
 }
