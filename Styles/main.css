@@ -75,12 +75,12 @@ header {
   margin-bottom: 5em;
   text-align: center;
 }
-header h2 {
+header h1 {
   letter-spacing: 2px;
   font-size: 1.7rem;
   opacity: 0.7;
 }
-header h2.light-header {
+header h1.light-header {
   font-weight: 200;
 }
 header p.fadded-text {
@@ -148,6 +148,9 @@ main .container > div[class|=card].card-orange::before {
 }
 main .container > div[class|=card].card-blue::before {
   background-color: #549ef2;
+}
+main .container > div[class|=card] h2 {
+  font-size: 1.2rem;
 }
 main .container > div[class|=card] p {
   font-size: 0.8rem;

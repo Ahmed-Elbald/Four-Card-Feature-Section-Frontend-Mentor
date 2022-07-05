@@ -80,13 +80,13 @@ header {
   margin-bottom: 5em;
   text-align: center;
 
-  h2 {
+  h1 {
     letter-spacing: 2px;
     font-size: 1.7rem;
     opacity: .7;
   }
 
-  h2.light-header {
+  h1.light-header {
     font-weight: 200;
   }
 
@@ -165,6 +165,10 @@ main {
       &.card-#{$name}::before {
         background-color: $color;
       }
+    }
+
+    h2 {
+      font-size: 1.2rem;
     }
 
     p {
